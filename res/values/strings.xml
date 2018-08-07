@@ -346,4 +346,12 @@
     <string name="icon_shape_rounded_square">Rounded square</string>
     <string name="smartspace_hours_mins">%1$s %2$s</string>
     <string name="action_preferences">@string/smartspace_preferences</string>
+
+    <!-- Customized Search Bar -->
+    <string name="force_mic">Show microphone</string>
+    <string name="force_colour_logo">Colored Google search bar logo</string>
+    <string name="dark_themeqsb">Dark search bar</string>
+    <string name="transparentqsb">Transparency on search bar</string>
+    <string name="dark_themeqsballapp">Dark search bar in all apps</string>
+    <string name="custom_search_bar">Search bar settings</string>
 </resources>

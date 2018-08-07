@@ -152,4 +152,10 @@
     <string name="icon_shape_rounded_square">Квадрат с закругленными углами</string>
     <string name="smartspace_hours_mins">%1$s %2$s</string>
     <string name="icon_shape_cylinder">Цилиндр</string>
+    <string name="force_mic">Микрофон в строке поиска</string>
+    <string name="force_colour_logo">Цветной логотип Google</string>
+    <string name="dark_themeqsb">Темная строка поиска</string>
+    <string name="transparentqsb">Прозрачная строка поиска</string>
+    <string name="dark_themeqsballapp">Темная строка поиска в меню</string>
+    <string name="custom_search_bar">Настройки строки поиска</string>
 </resources>
