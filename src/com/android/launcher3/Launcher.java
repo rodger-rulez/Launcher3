@@ -939,8 +939,6 @@ public class Launcher extends BaseActivity
         }
         mShouldFadeInScrim = false;
 
-        // Update theme if it changed
-        WallpaperManagerCompat.getInstance(this).updateAllListeners();
     }
 
     @Override
