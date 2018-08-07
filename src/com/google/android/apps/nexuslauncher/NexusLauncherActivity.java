@@ -86,8 +86,7 @@ public class NexusLauncherActivity extends Launcher {
         return Utilities.getPrefs(this).getString(Utilities.THEME_OVERRIDE_KEY, "");
     }
 
-    @Override
-    public void overrideTheme(boolean isDark, boolean supportsDarkText, boolean isTransparent) {
+    public void overrideTheme(boolean isDark, boolean supportsDarkText) {
         int flags = Utilities.getDevicePrefs(this).getInt(NexusLauncherOverlay.PREF_PERSIST_FLAGS, 0);
         int orientFlag = getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE ? 16 : 8;
         boolean useGoogleInOrientation = (orientFlag & flags) != 0;
@@ -96,12 +95,10 @@ public class NexusLauncherActivity extends Launcher {
             setTheme(R.style.GoogleSearchLauncherThemeDark);
         } else if (useGoogleInOrientation && supportsDarkText) {
             setTheme(R.style.GoogleSearchLauncherThemeDarkText);
-        } else if (useGoogleInOrientation && isTransparent) {
-            setTheme(R.style.GoogleSearchLauncherThemeTransparent);
         } else if (useGoogleInOrientation) {
             setTheme(R.style.GoogleSearchLauncherTheme);
         } else {
-            super.overrideTheme(isDark, supportsDarkText, isTransparent);
+            super.overrideTheme(isDark, supportsDarkText);
         }
     }
 
